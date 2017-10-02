@@ -17,27 +17,29 @@ end
 
 function MatchString(myString)
   --local myString = "Chris,Lars"
+  local i = 0
   
 	  for word in string.gmatch(myString, '([^,]+)') do
-      return word
+	    Befehl[i] = word
+	    i = i + 1
+	    print(word)
     end
+    return "Hello"
     
 end
 
-function (Befehl)
-  --local myString = "Chris,Lars"
-  
-	  for word in string.gmatch(myString, '([^,]+)') do
-      return word
-    end
+function Befehlsdecoder (Befehl)
     
 end
 
-
-    local Befehl
+    local StringIn = "Chris,Lars,Daniel"
+    Richtung = "set"
+    Befehl = {}
     local Wert
      
-    Test();
-    Befehl ,Wert = MatchString("Chris,Lars");
+    --Test();
+    Wert = MatchString("Chris,Lars,Daniel");
+    --Befehlsdecoder (Befehl)
+    print(Befehl[0])
     --print(maximum({8,10,23,12,5}))     --> 23   3 
-    print (Befehl)
+    --print (Befehl)
