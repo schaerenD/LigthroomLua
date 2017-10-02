@@ -15,6 +15,7 @@ function Test()
 	  print( "Hallo Welt" )
 end
 
+
 function SuperMatch()
   local myString = "Chris,Lars"
   
@@ -24,8 +25,9 @@ function SuperMatch()
     
 end
 
-     local uno
-     local duo
+
+    local uno
+    local duo
      
     Test();
     uno,duo = SuperMatch();
