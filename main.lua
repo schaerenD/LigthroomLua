@@ -16,8 +16,8 @@ function Test()
 end
 
 
-function SuperMatch()
-  local myString = "Chris,Lars"
+function MatchString(myString)
+  --local myString = "Chris,Lars"
   
 	  for word in string.gmatch(myString, '([^,]+)') do
       return word
@@ -26,13 +26,14 @@ function SuperMatch()
 end
 
 
-    local uno
-    local duo
+    local Befehl
+    local Wert
      
     Test();
-    uno,duo = SuperMatch();
-    print(maximum({8,10,23,12,5}))     --> 23   3 
-    print (uno)
+    Befehl ,Wert = SuperMatch();
+    --print(maximum({8,10,23,12,5}))     --> 23   3 
+    --print (uno)
+    
     
 
 
