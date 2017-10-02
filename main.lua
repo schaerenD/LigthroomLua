@@ -1,4 +1,3 @@
-
 function maximum (a)
       local mi = 1          -- maximum index
       local m = a[mi]       -- maximum value
@@ -25,18 +24,20 @@ function MatchString(myString)
     
 end
 
+function (Befehl)
+  --local myString = "Chris,Lars"
+  
+	  for word in string.gmatch(myString, '([^,]+)') do
+      return word
+    end
+    
+end
+
 
     local Befehl
     local Wert
      
     Test();
-    Befehl ,Wert = SuperMatch();
+    Befehl ,Wert = MatchString("Chris,Lars");
     --print(maximum({8,10,23,12,5}))     --> 23   3 
-    --print (uno)
-    
-    
-
-
-
-
-  
+    print (Befehl)
