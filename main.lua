@@ -16,33 +16,26 @@ end
 
 ----------------- set LR Function -----------------
 
-function Test()
-	  print( "Hallo Welt" )
+function LR_Develop_Set_Value()
+
+	  LrDevelopController.setValue(Befehl,Wert)
+	  
 end
 
 ----------------- set LR Function -----------------
 
 ----------------- get LR Function -----------------
 
-function LR_Get_Temperatur()
+function LR_Develop_Get_Value()
 	  
-	  local Temperature = LrDevelopController.getValue("Temperature")
-	  return Temperature
-	  
-end
-
-function LR_Get_Temperatur()
-	  
-	  local Temperature = LrDevelopController.getValue("Temperature")
-	  return Temperature
+	  local Value = LrDevelopController.getValue(Befehl)
+	  return Value
 	  
 end
 
 ----------------- get LR Function -----------------
 
-function Test()
-	  print( "Hallo Welt" )
-end
+----------------- Match Function  -----------------
 
 function MatchString(myString)
      
@@ -66,10 +59,18 @@ function MatchString(myString)
     
 end
 
-function Befehlsdecoder (Befehl)
+----------------- Match Function  -----------------
 
-			
-    
+----------------- Control Function ----------------
+
+
+----------------- Control Function ----------------
+
+
+
+
+function Test()
+	  print( "Hallo Welt" )
 end
 
     local StringIn = "Chris,Lars,Daniel"
